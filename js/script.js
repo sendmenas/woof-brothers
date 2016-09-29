@@ -59,8 +59,8 @@ $(document).ready(function() {
 	});
 
 	$("#showAll").click(function() {
-		$(".gameStory").toggle();
-		$(".comment").toggle(1000);
+		$(".gameStory").css("display", "inherit");
+		$(".comment").css("display", "inherit");
 		$(".yesNo, .continue").css("display", "none");
 		$("#showAll").html("start again");
 		$("#showAll").click(function() {
