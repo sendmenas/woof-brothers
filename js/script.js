@@ -36,7 +36,7 @@ $(document).ready(function() {
 			if (brotherSelect === "Del") {
 				$(this).parents(".gameStory").nextAll(".del").first().toggle();
 				$("html, body").animate({scrollTop: $(this).parents(".gameStory").nextAll(".del").first().offset().top}, 500);
-				$(this).parents(".gameStory").nextAll(".derek").first().find(".comment").toggle(1000);
+				$(this).parents(".gameStory").nextAll(".del").first().find(".comment").toggle(1000);
 			}
 		});
 
@@ -62,6 +62,7 @@ $(document).ready(function() {
 		$(".gameStory").css("display", "inherit");
 		$(".comment").css("display", "inherit");
 		$(".yesNo, .continue").css("display", "none");
+		$("html, body").animate({scrollTop: $(this).parents("body").children(".gameStory").first().offset().top}, 500);
 		$("#showAll").html("start again");
 		$("#showAll").click(function() {
 			location.reload();
