@@ -6,7 +6,6 @@ $(document).ready(function() {
 	$(".brother").click(function() {
 		
 		var brotherSelect = $(this).attr("id");
-		console.log(brotherSelect);
 		
 		if (brotherSelect === "Derek") {
 			$(".thumbnail").removeClass("selected");
@@ -22,7 +21,6 @@ $(document).ready(function() {
 		if (firstSelection == true) {
 
 			var thisBrother = $(this).parents(".main").next();
-			console.log(thisBrother);
 
 			$(this).parents(".main").next().toggle();
 			$("html, body").animate({scrollTop: $(this).parents(".main").next().offset().top}, 500);
@@ -55,7 +53,6 @@ $(document).ready(function() {
 	/* Action buttons */
 	$(".yesNo").click(function() {
 		var banditSelect = $(this).html();
-		console.log(banditSelect);
 
 		if (banditSelect === "Yes") {
 			alert("Please reconsider");
