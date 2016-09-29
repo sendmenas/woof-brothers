@@ -97,6 +97,10 @@ p span {
 	border-bottom: 3px solid black;
 }
 
+.comment {
+	display: none;
+}
+
 .comment p {
 	font-family: 'Caveat Brush', cursive;
 	text-transform: uppercase;
