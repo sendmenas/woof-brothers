@@ -34,7 +34,6 @@ $(document).ready(function() {
 				$("html, body").animate({scrollTop: $(this).parents(".gameStory").nextAll(".derek").first().offset().top}, 500);
 			}
 			if (brotherSelect === "Del") {
-				console.log($(this).parents(".gameStory").nextAll(".del").first());
 				$(this).parents(".gameStory").nextAll(".del").first().toggle();
 				$("html, body").animate({scrollTop: $(this).parents(".gameStory").nextAll(".del").first().offset().top}, 500);
 			}
