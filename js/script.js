@@ -1,12 +1,10 @@
 $(document).ready(function() {
 
 	/* Character selection */
-
-
 	$(".brother").click(function() {
 		
 		var brotherSelect = $(this).attr("id");
-		
+	
 		if (brotherSelect === "Derek") {
 			$(".thumbnail").removeClass("selected");
 			$(this).addClass("selected");
@@ -23,6 +21,7 @@ $(document).ready(function() {
 			var thisBrother = $(this).parents(".main").next();
 
 			$(this).parents(".main").next().toggle();
+			$(this).parents(".main").next().find(".comment").toggle(1000);
 			$("html, body").animate({scrollTop: $(this).parents(".main").next().offset().top}, 500);
 		} else {
 			$(".thumbnail").removeClass("selected");
@@ -32,26 +31,22 @@ $(document).ready(function() {
 			if (brotherSelect === "Derek") {
 				$(this).parents(".gameStory").nextAll(".derek").first().toggle();
 				$("html, body").animate({scrollTop: $(this).parents(".gameStory").nextAll(".derek").first().offset().top}, 500);
+				$(this).parents(".gameStory").nextAll(".derek").first().find(".comment").toggle(1000);
 			}
 			if (brotherSelect === "Del") {
 				$(this).parents(".gameStory").nextAll(".del").first().toggle();
 				$("html, body").animate({scrollTop: $(this).parents(".gameStory").nextAll(".del").first().offset().top}, 500);
+				$(this).parents(".gameStory").nextAll(".derek").first().find(".comment").toggle(1000);
 			}
 		});
 
 
 	});
 
-	/* Hovering */
-	$(".thumbnail").hover(function() {
-		$(this).nextAll().css("display", "initial");
-	}, function () {
-		$(".comment").css("display", "none");
-	});
-
 	/* Action buttons */
 	$(".yesNo").click(function() {
 		var banditSelect = $(this).html();
+		console.log(banditSelect);
 
 		if (banditSelect === "Yes") {
 			alert("Please reconsider");
@@ -59,6 +54,7 @@ $(document).ready(function() {
 		if (banditSelect === "No") {
 			$(this).parents().next().toggle();
 			$("html, body").animate({scrollTop: $(this).parents().next().offset().top}, 500);
+			$(this).parents(".gameStory").next().first().find(".comment").toggle(1000);
 		}
 	});
 
