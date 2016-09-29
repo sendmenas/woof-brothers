@@ -60,6 +60,7 @@ $(document).ready(function() {
 
 	$("#showAll").click(function() {
 		$(".gameStory").toggle();
+		$(".comment").toggle(1000);
 		$(".yesNo, .continue").css("display", "none");
 		$("#showAll").html("start again");
 		$("#showAll").click(function() {
