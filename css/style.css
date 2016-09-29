@@ -1,0 +1,139 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #808080;
+}
+
+h3 {
+	font-family: 'Teko', sans-serif;
+	font-size: 36px;
+}
+
+p span {
+	font-family: 'Bangers', cursive;
+}
+
+.thumbnail {
+	margin: 10px 0;
+}
+
+.btn {
+	font-family: 'Bangers', cursive;
+	font-size: 24px;
+	border: 2px solid black;
+	background-color: white;
+}
+
+/* Head*/
+.head {
+	background-color: #808080;
+	border-bottom: 3px solid black;
+}
+
+.head ul {
+	list-style-type: none;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.head li {
+	float: right;
+	padding: 25px 30px;
+}
+
+.head h1 {
+	float: left;
+	margin: 0;
+	padding: 15px;
+	font-size: 52px;
+	font-family: 'Bangers', cursive;
+	color: white;
+}
+
+.head a {
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: 'Teko', sans-serif;
+}
+
+/* Main */
+.main {
+	background-color: #DBCCB3;
+	border-bottom: 3px solid black;
+}
+
+.main .row {
+	text-align: center;
+}
+
+.main h1 {
+	font-family: 'Teko', sans-serif;
+	font-size: 52px;
+}
+
+.main h3 {
+	font-family: 'Bangers', cursive;	
+}
+
+.main .thumbnail {
+	width: 240px;
+	height: 240px;
+}
+
+.main .selected {
+  padding: 20px;
+  background-color: #808080;
+}
+ 
+ /* Game story*/
+
+.gameStory {
+	display: none;
+	text-align: center;
+	padding-bottom: 30px;
+	background-color: #DBCCB3;
+	border-bottom: 3px solid black;
+}
+
+.comment p {
+	font-family: 'Caveat Brush', cursive;
+	text-transform: uppercase;
+	font-size: 24px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 3px 8px;
+}
+
+.thinks p {
+	border: 2px dashed black;
+}
+
+.gameStory .story {
+	text-align: left;
+}
+
+.gameStory h1 {
+	margin: 0;
+	padding: 15px;
+	font-size: 52px;
+	font-family: 'Bangers', cursive;
+	color: black;
+}
+
+
+.gameStory h3 {
+	clear: both;
+}
+
+/* Footer */
+.footer {
+	background-color: #808080;
+	text-align: center;
+}
+
+#showAll {
+	margin: 50px 0;
+}
