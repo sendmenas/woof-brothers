@@ -20,6 +20,11 @@ p span {
 	background-color: white;
 }
 
+.row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /* Head*/
 .head {
 	background-color: #808080;
@@ -71,30 +76,29 @@ p span {
 
 .main h3 {
 	font-family: 'Bangers', cursive;
-	position: absolute;
 	color: black;
-	margin-top: 195px;
-	width: 230px;
-	background-color: white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.main a:hover {
+	text-decoration: none;
 }
 
 .main .thumbnail {
-	width: 240px;
-	height: 240px;
-	margin: 10px;
+	width: 100%;
+	margin: 0px;
 }
 
 .main .selected {
-	width: 300px;
-	height: 300px;
+	width: 100%;
 	padding: 20px;
 	background-color: #808080;
 	margin: 20px 50px;
 }
 
 .main .selected h3 {
-	margin-top: 220px;
-	width: 258px;
+	background-color: white;
 }
  
  /* Game story*/

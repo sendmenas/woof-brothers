@@ -1,37 +1,37 @@
 $(document).ready(function() {
 
-	$(".col-md-3").click(function() {
-		$(this).removeClass("col-md-3 col-md-offset-3").addClass("col-md-4 col-md-offset-4");
-	});
-
 	/* Character selection */
 	$(".brother").click(function() {
-		
-		var brotherSelect = $(this).attr("id");
-	
-		if (brotherSelect === "Derek") {
-			$(".thumbnail").removeClass("selected");
-			$(this).addClass("selected");
-			$(this).parents().next().css("display", "none");
-		}
-
-		if (brotherSelect === "Del") {
-			$(".thumbnail").removeClass("selected");
-			$(this).addClass("selected");
-			$(this).parents().prev().css("display", "none");
-		}
 
 		var firstSelection = confirm("Are you sure you want to choose " + brotherSelect + "?");
 		if (firstSelection == true) {
 
-			var thisBrother = $(this).parents(".main").next();
+			var brotherSelect = $(this).attr("id");
+	
+			if (brotherSelect === "Derek") {
+				$(".thumbnail").removeClass("selected");
+				$(this).addClass("selected");
+				$(this).parents().next().css("display", "none");
+				$(this).parent().removeClass("col-md-3 col-md-offset-3").addClass("col-md-4 col-md-offset-4");
+			}
 
-			$(this).parents(".main").next().toggle();
-			$(this).parents(".main").next().find(".comment").toggle(1000);
-			$("html, body").animate({scrollTop: $(this).parents(".main").next().offset().top}, 500);
-		} else {
-			$(".thumbnail").removeClass("selected");
+			if (brotherSelect === "Del") {
+				$(".thumbnail").removeClass("selected");
+				$(this).addClass("selected");
+				$(this).parents().prev().css("display", "none");
+				$(this).parent().removeClass("col-md-3 col-md-offset-3").addClass("col-md-4 col-md-offset-4");
+			}
+
+				var thisBrother = $(this).parents(".main").next();
+
+				$(this).parents(".main").next().toggle();
+				$(this).parents(".main").next().find(".comment").toggle(1000);
+				$("html, body").animate({scrollTop: $(this).parents(".main").next().offset().top}, 500);
+			} else {
+				$(".thumbnail").removeClass("selected");
 		}
+		
+		
 
 		$(".continue").click(function() {
 			if (brotherSelect === "Derek") {
