@@ -14,20 +14,18 @@ $(document).ready(function() {
 				$(this).parents().next().css("display", "none");
 				$(this).parent().removeClass("col-md-3 col-md-offset-3").addClass("col-md-4 col-md-offset-4");
 			}
-
 			if (brotherSelect === "Del") {
 				$(".thumbnail").removeClass("selected");
 				$(this).addClass("selected");
 				$(this).parents().prev().css("display", "none");
 				$(this).parent().removeClass("col-md-3 col-md-offset-3").addClass("col-md-4 col-md-offset-4");
 			}
-
-				var thisBrother = $(this).parents(".main").next();
-
-				$(this).parents(".main").next().toggle();
-				$(this).parents(".main").next().find(".comment").toggle(1000);
-				$("html, body").animate({scrollTop: $(this).parents(".main").next().offset().top}, 500);
-			} else {
+			$(this).parents(".main").next().toggle();
+			$(this).parents(".main").next().find(".comment").toggle(1000);
+			$("html, body").animate({scrollTop: $(this).parents(".main").next().offset().top}, 500);
+			$(".brother").off();
+		}
+		else {
 				$(".thumbnail").removeClass("selected");
 		}
 		
