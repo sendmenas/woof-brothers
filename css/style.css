@@ -13,10 +13,6 @@ p span {
 	font-family: 'Bangers', cursive;
 }
 
-.thumbnail {
-	margin: 10px 0;
-}
-
 .btn {
 	font-family: 'Bangers', cursive;
 	font-size: 24px;
@@ -74,17 +70,31 @@ p span {
 }
 
 .main h3 {
-	font-family: 'Bangers', cursive;	
+	font-family: 'Bangers', cursive;
+	position: absolute;
+	color: black;
+	margin-top: 195px;
+	width: 230px;
+	background-color: white;
 }
 
 .main .thumbnail {
 	width: 240px;
 	height: 240px;
+	margin: 10px;
 }
 
 .main .selected {
-  padding: 20px;
-  background-color: #808080;
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	background-color: #808080;
+	margin: 20px 50px;
+}
+
+.main .selected h3 {
+	margin-top: 220px;
+	width: 258px;
 }
  
  /* Game story*/
@@ -102,13 +112,29 @@ p span {
 }
 
 .comment p {
+	min-height: 60px;
 	font-family: 'Caveat Brush', cursive;
 	text-transform: uppercase;
+	text-align: left;
 	font-size: 24px;
 	background-color: white;
 	border: 2px solid black;
 	border-radius: 10px;
-	padding: 3px 8px;
+	padding: 3px 8px 3px 3px;
+	clear: left;
+	margin-top: 10px;
+}
+
+.comment img {
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.avatar {
+	float: left;
+	width: 50px;
+	height: 50px;
 }
 
 .thinks p {

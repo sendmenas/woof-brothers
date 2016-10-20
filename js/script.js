@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	$(".col-md-3").click(function() {
+		$(this).removeClass("col-md-3 col-md-offset-3").addClass("col-md-4 col-md-offset-4");
+	});
+
 	/* Character selection */
 	$(".brother").click(function() {
 		
@@ -8,11 +12,13 @@ $(document).ready(function() {
 		if (brotherSelect === "Derek") {
 			$(".thumbnail").removeClass("selected");
 			$(this).addClass("selected");
+			$(this).parents().next().css("display", "none");
 		}
 
 		if (brotherSelect === "Del") {
 			$(".thumbnail").removeClass("selected");
 			$(this).addClass("selected");
+			$(this).parents().prev().css("display", "none");
 		}
 
 		var firstSelection = confirm("Are you sure you want to choose " + brotherSelect + "?");
