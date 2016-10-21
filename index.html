@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>Woof brothers</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat+Brush">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
 	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -28,13 +29,13 @@
 				<div class="col-md-3 col-md-offset-3">
 				<!-- Vardus pabandyti padaryti icon'oje-->
 					<a href="#" class="thumbnail brother" id="Derek">
-						<img src="img/Derek.png">
+						<img src="img/Derek.png" class="opener">
 						<h3>Derek</h3>
 					</a>
 				</div>
 				<div class="col-md-3">
 					<a href="#" class="thumbnail brother" id="Del">
-						<img src="img/Del.png">
+						<img src="img/Del.png" class="opener">
 						<h3>Del</h3>
 					</a>
 				</div>
@@ -48,9 +49,13 @@
 				<div>
 					<h3>Del asked Derek to go to the store and get some groceries.</h3>
 				</div>
-				<div class="comment col-md-4">
-					<p class="comment"><img class="avatar" src="img/Del.png"><span>Del:</span> - Derek, could you run to store?</p>
-					<p class="comment"><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Sure thing!</p>
+				<div class="col-md-4">
+					<div class="comment">
+						<p><img class="avatar" src="img/Del.png"><span>Del:</span> - Derek, could you run to store?</p>
+					</div>
+					<div class="comment">
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Sure thing!</p>
+					</div>	
 				</div>
 				<div class="col-md-8 story">
 					<a href="img/story1.png" class="thumbnail" data-lightbox="img/story1.png">
@@ -105,7 +110,7 @@
 						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - What do you want?</p>
 					</div>
 					<div class="comment">
-						<p><img class="avatar" src="img/bandit_avatar.png"><span>Bandit:</span> - Boy, give all your money!</p>
+						<p><img class="avatar" src="img/bandit.png"><span>Bandit:</span> - Boy, give all your money!</p>
 					</div>
 				</div>
 				<h3>Will Derek give him all his money?</h3>
@@ -125,7 +130,7 @@
 						<img src="img/story7.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - You punk!</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - You punk!</p>
 					</div>
 				</div>
 			</div>
@@ -140,7 +145,7 @@
 						<img src="img/story9.png">
 					</a>
 					<div class="comment">
-						<p><span>Bandit:</span> - Whaaat?!?!</p>
+						<p><img class="avatar" src="img/bandit.png"><span>Bandit:</span> - Whaaat?!?!</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -148,7 +153,7 @@
 						<img src="img/story10.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - Cigarettes are rubbish.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Cigarettes are rubbish.</p>
 					</div>
 				</div>
 			</div>
@@ -158,7 +163,7 @@
 						<img src="img/story11.png">
 					</a>
 					<div class="comment">
-						<p><span>Bandit:</span> - My last ciggy. (cries)</p>
+						<p><img class="avatar" src="img/bandit.png"><span>Bandit:</span> - My last ciggy. (cries)</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -166,7 +171,7 @@
 						<img src="img/story12.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - Stay out of my sight, thief.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Stay out of my sight, thief.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -174,10 +179,10 @@
 						<img src="img/story13.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - I should be heading home already.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - I should be heading home already.</p>
 					</div>
 					<div class="comment thinks">
-						<p><span>Bandit:</span> - (thinks) No luck this time...</p>
+						<p><img class="avatar" src="img/bandit.png"><span>Bandit:</span> - (thinks) No luck this time...</p>
 					</div>
 				</div>
 			</div>
@@ -194,7 +199,7 @@
 						<img src="img/story14.png">
 					</a>
 					<div class="comment">
-						<p><span>Del:</span> - What the heck, brother is gone for too long already. Maybe something happened to him.</p>
+						<p><img class="avatar" src="img/Del.png"><span>Del:</span> - What the heck, brother is gone for too long already. Maybe something happened to him.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -202,10 +207,10 @@
 						<img src="img/story15.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - I am back!</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - I am back!</p>
 					</div>
 					<div class="comment">
-						<p><span>Del:</span> - At last. I almost went to look for you.</p>
+						<p><img class="avatar" src="img/Del.png"><span>Del:</span> - At last. I almost went to look for you.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -213,10 +218,10 @@
 						<img src="img/story16.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - I hope you are not planning to spend all your day lying around?</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - I hope you are not planning to spend all your day lying around?</p>
 					</div>
 					<div class="comment">
-						<p><span>Del:</span> - Why not? Weather is great.</p>
+						<p><img class="avatar" src="img/Del.png"><span>Del:</span> - Why not? Weather is great.</p>
 					</div>
 				</div>
 			</div>
@@ -226,7 +231,7 @@
 						<img src="img/story17.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - You should move more, lazybones. Let's go for a walk.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - You should move more, lazybones. Let's go for a walk.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -234,10 +239,10 @@
 						<img src="img/story18.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - The "Bull" bank should pay us our monthly earning.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - The "Bull" bank should pay us our monthly earning.</p>
 					</div>
 					<div class="comment">
-						<p><span>Derek:</span> - Let's go to the downtown.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Let's go to the downtown.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -245,10 +250,10 @@
 						<img src="img/story19.png">
 					</a>
 					<div class="comment">
-						<p><span>Del:</span> - C'mon man, you have been pushing me around for the whole week!!</p>
+						<p><img class="avatar" src="img/Del.png"><span>Del:</span> - C'mon man, you have been pushing me around for the whole week!!</p>
 					</div>
 					<div class="comment">
-						<p><span>Derek:</span> - Stop whining!</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Stop whining!</p>
 					</div>
 				</div>
 			</div>
@@ -265,10 +270,10 @@
 						<img src="img/story20.png">
 					</a>
 					<div class="comment">
-						<p><span>Del:</span> - I will meet you later.</p>
+						<p><img class="avatar" src="img/Del.png"><span>Del:</span> - I will meet you later.</p>
 					</div>
 					<div class="comment">
-						<p><span>Derek:</span> - Please be here after one hour.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Please be here after one hour.</p>
 					</div>
 				</div>
 			</div>
@@ -284,7 +289,7 @@
 						<img src="img/story21.png">
 					</a>
 					<div class="comment">
-						<p><span>Banker:</span> - Mr. Derek, are you here to withdraw your monthly earnings?</p>
+						<p><img class="avatar" src="img/banker.png"><span>Banker:</span> - Mr. Derek, are you here to withdraw your monthly earnings?</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -292,7 +297,7 @@
 						<img src="img/story22.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - Yes. I think it is about time.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Yes. I think it is about time.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -300,7 +305,7 @@
 						<img src="img/story23.png">
 					</a>
 					<div class="comment">
-						<p><span>Banker:</span> - Hello! Please bring 5000 crones to the first floor.</p>
+						<p><img class="avatar" src="img/banker.png"><span>Banker:</span> - Hello! Please bring 5000 crones to the first floor.</p>
 					</div>
 				</div>
 			</div>
@@ -317,7 +322,7 @@
 						<img src="img/story24.png">
 					</a>
 					<div class="comment">
-						<p><span>Del:</span> - All shops are closed, this is ridiculous...</p>
+						<p><img class="avatar" src="img/Del.png"><span>Del:</span> - All shops are closed, this is ridiculous...</p>
 					</div>
 				</div>
 			</div>
@@ -339,7 +344,7 @@
 						<img src="img/story26.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - We have some uninvited guests...</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - We have some uninvited guests...</p>
 					</div>
 				</div>
 			</div>
@@ -363,10 +368,10 @@
 						<img src="img/story28.png">
 					</a>
 					<div class="comment">
-						<p><span>Kraimking:</span> - Oh, hello Mr. Derek! Nice to see you!</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>Kraimking:</span> - Oh, hello Mr. Derek! Nice to see you!</p>
 					</div>
 					<div class="comment thinks">
-						<p><span>Banker:</span> - (thinks) What is going on here?</p>
+						<p><img class="avatar" src="img/banker.png"><span>Banker:</span> - (thinks) What is going on here?</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -374,7 +379,7 @@
 						<img src="img/story29.png">
 					</a>
 					<div class="comment">
-						<p><span>Derek:</span> - Well, it is nice to see you too, Mr. Kraimking...</p>
+						<p><img class="avatar" src="img/Derek.png"><span>Derek:</span> - Well, it is nice to see you too, Mr. Kraimking...</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -382,7 +387,7 @@
 						<img src="img/story30.png">
 					</a>
 					<div class="comment">
-						<p><span>Kraimking:</span> - please understand, i also need money for my humble living.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>Kraimking:</span> - please understand, i also need money for my humble living.</p>
 					</div>
 				</div>
 			</div>
@@ -392,7 +397,7 @@
 						<img src="img/story31.png">
 					</a>
 					<div class="comment">
-						<p><span>derek:</span> - please don't tell me that you have come to come to retrieve your deposit. i would suggest you not to do it in my presence.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - please don't tell me that you have come to come to retrieve your deposit. i would suggest you not to do it in my presence.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -400,10 +405,10 @@
 						<img src="img/story32.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - mr. derek, if you will not  do anything stupid, no one will get hurt.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - mr. derek, if you will not  do anything stupid, no one will get hurt.</p>
 					</div>
 					<div class="comment">
-						<p><span>mobster:</span> - come here!</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - come here!</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -411,10 +416,10 @@
 						<img src="img/story33.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - maybe you managed to handle other mobsters, but I will not be like them.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - maybe you managed to handle other mobsters, but I will not be like them.</p>
 					</div>
 					<div class="comment">
-						<p><span>derek:</span> - you will not get away with this.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - you will not get away with this.</p>
 					</div>
 				</div>
 			</div>
@@ -424,7 +429,7 @@
 						<img src="img/story34.png">
 					</a>
 					<div class="comment">
-						<p><span>bank guard:</span> - och!!!</p>
+						<p><img class="avatar" src="img/guard.png"><span>bank guard:</span> - och!!!</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -432,7 +437,7 @@
 						<img src="img/story35.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - and what to do with you I will decide later.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - and what to do with you I will decide later.</p>
 					</div>
 				</div>
 			</div>
@@ -449,7 +454,7 @@
 						<img src="img/story36.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - hm, i never visited this part of town.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - hm, i never visited this part of town.</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -457,7 +462,7 @@
 						<img src="img/story37.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - ou! i should get back to the bank, derek will be mad if i get late.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - ou! i should get back to the bank, derek will be mad if i get late.</p>
 					</div>
 				</div>
 				<h3>After 10 minutes...</h3>
@@ -466,7 +471,7 @@
 						<img src="img/story38.png">
 					</a>
 					<div class="comment thinks">
-						<p><span>del:</span> - (thinks) interesting, who owns this Cadillac?</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - (thinks) interesting, who owns this Cadillac?</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -474,7 +479,7 @@
 						<img src="img/story39.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - strange, it looks like everyone vanished around here.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - strange, it looks like everyone vanished around here.</p>
 					</div>
 				</div>
 			</div>
@@ -491,7 +496,7 @@
 						<img src="img/story40.png">
 					</a>
 					<div class="comment thinks">
-						<p><span>derek:</span> - (thinks) del! god damn it! i need to send him some sign.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - (thinks) del! god damn it! i need to send him some sign.</p>
 					</div>
 				</div>
 			</div>
@@ -507,7 +512,7 @@
 						<img src="img/story41.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - interesting, what is... shit!</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - interesting, what is... shit!</p>
 					</div>
 				</div>
 			</div>
@@ -524,7 +529,7 @@
 						<img src="img/story42.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - so, derek, how do you feel when the gun is pointed to you.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - so, derek, how do you feel when the gun is pointed to you.</p>
 					</div>
 				</div>
 				<div class="col-md-3 story">
@@ -532,7 +537,7 @@
 						<img src="img/story43.png">
 					</a>
 					<div class="comment">
-						<p><span>banker:</span> - eee... mister, excuse me to interrupt, but it is forbidden to smoke here!</p>
+						<p><img class="avatar" src="img/banker.png"><span>banker:</span> - eee... mister, excuse me to interrupt, but it is forbidden to smoke here!</p>
 					</div>
 				</div>
 				<div class="col-md-3 story">
@@ -540,10 +545,10 @@
 						<img src="img/story44.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - sorry, you said something but i did not catch it?</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - sorry, you said something but i did not catch it?</p>
 					</div>
 					<div class="comment">
-						<p><span>banker:</span> - ee, nothing sir?</p>
+						<p><img class="avatar" src="img/banker.png"><span>banker:</span> - ee, nothing sir?</p>
 					</div>
 				</div>
 				<div class="col-md-3 story">
@@ -551,7 +556,7 @@
 						<img src="img/story45.png">
 					</a>
 					<div class="comment">
-						<p><span>banker:</span> - khe, khe!</p>
+						<p><img class="avatar" src="img/banker.png"><span>banker:</span> - khe, khe!</p>
 					</div>
 				</div>
 			</div>
@@ -561,7 +566,7 @@
 						<img src="img/story46.png">
 					</a>
 					<div class="comment">
-						<p><span>derek:</span> - he said very clearly, that this is not allowed to smoke here.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - he said very clearly, that this is not allowed to smoke here.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -569,7 +574,7 @@
 						<img src="img/story47.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - really? but as you can see i am smoking and you can not do anything about it. by the way, where is your little brother?</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - really? but as you can see i am smoking and you can not do anything about it. by the way, where is your little brother?</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -577,10 +582,10 @@
 						<img src="img/story48.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - loyd, go check all the exits. be careful - these schmucks are clever.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - loyd, go check all the exits. be careful - these schmucks are clever.</p>
 					</div>
 					<div class="comment">
-						<p><span>mobster:</span> - yes, boss.</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - yes, boss.</p>
 					</div>
 				</div>
 			</div>
@@ -597,7 +602,7 @@
 						<img src="img/story49.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - kraimking! that bastard! i need to get inside the bank.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - kraimking! that bastard! i need to get inside the bank.</p>
 					</div>
 				</div>
 			</div>
@@ -614,7 +619,7 @@
 						<img src="img/story50.png">
 					</a>
 					<div class="comment">
-						<p><span>derek:</span> - why are you so interested in my brother? am i not enough?</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - why are you so interested in my brother? am i not enough?</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -622,7 +627,7 @@
 						<img src="img/story51.png">
 					</a>
 					<div class="comment thinks">
-						<p><span>derek:</span> - (thinks) no problem, del can take care of himself.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - (thinks) no problem, del can take care of himself.</p>
 					</div>
 				</div>
 			</div>
@@ -633,7 +638,7 @@
 						<img src="img/story52.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - i can not wait to see you sleeping with the fishes in cement shoes. and your little brother will be not able to help you.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - i can not wait to see you sleeping with the fishes in cement shoes. and your little brother will be not able to help you.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -641,7 +646,7 @@
 						<img src="img/story53.png">
 					</a>
 					<div class="comment">
-						<p><span>derek:</span> - i doubt that. are saying this to everyone who refused to work for you? heh...</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - i doubt that. are saying this to everyone who refused to work for you? heh...</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -649,7 +654,7 @@
 						<img src="img/story54.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - we will see who will be laughing last.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - we will see who will be laughing last.</p>
 					</div>
 				</div>
 			</div>
@@ -666,7 +671,7 @@
 						<img src="img/story55.png">
 					</a>
 					<div class="comment thinks">
-						<p><span>del:</span> - (thinks) there is a whole bunch of these losers, i need to do something fast...</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - (thinks) there is a whole bunch of these losers, i need to do something fast...</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -674,10 +679,10 @@
 						<img src="img/story56.png">
 					</a>
 					<div class="comment">
-						<p><span>mobster 1:</span> - do you remember what boss said?</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster 1:</span> - do you remember what boss said?</p>
 					</div>
 					<div class="comment">
-						<p><span>mobster 2:</span> - i think we should check everything around the building.</p>
+						<p><img class="avatar" src="img/mobster2.png"><span>mobster 2:</span> - i think we should check everything around the building.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -685,7 +690,7 @@
 						<img src="img/story57.png">
 					</a>
 					<div class="comment thinks">
-						<p><span>del:</span> - (thinks) damn it, they are coming my way!</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - (thinks) damn it, they are coming my way!</p>
 					</div>
 				</div>
 			</div>
@@ -695,7 +700,7 @@
 						<img src="img/story58.png">
 					</a>
 					<div class="comment thinks">
-						<p><span>del:</span> - (thinks) what should i do?</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - (thinks) what should i do?</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -703,7 +708,7 @@
 						<img src="img/story59.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - lucky me, i think i have an idea!</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - lucky me, i think i have an idea!</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -724,7 +729,7 @@
 						<img src="img/story61.png">
 					</a>
 					<div class="comment">
-						<p><span>mobster:</span> - old man, have you seen anyone around here?</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - old man, have you seen anyone around here?</p>
 					</div>
 				</div>
 				<div class="col-md-8 story">
@@ -732,10 +737,10 @@
 						<img src="img/story62.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - i did saw anything until you woke me up.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - i did saw anything until you woke me up.</p>
 					</div>
 					<div class="comment">
-						<p><span>del:</span> - in this case, could you spare some change for the homeless?</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - in this case, could you spare some change for the homeless?</p>
 					</div>
 				</div>
 			</div>
@@ -745,10 +750,10 @@
 						<img src="img/story63.png">
 					</a>
 					<div class="comment">
-						<p><span>mobster:</span> - get lost, begger! you are getting nothing from us!</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - get lost, begger! you are getting nothing from us!</p>
 					</div>
 					<div class="comment">
-						<p><span>del:</span> - i thought so...</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - i thought so...</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -756,7 +761,7 @@
 						<img src="img/story64.png">
 					</a>
 					<div class="comment">
-						<p><span>mobster:</span> - i think all is good in here, lets get back.</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - i think all is good in here, lets get back.</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -778,7 +783,7 @@
 						<img src="img/story66.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - you see, derek, i have a dilemma here. i have come here to deal my own business, but you got in my way. now i do not know which matter i should address first.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - you see, derek, i have a dilemma here. i have come here to deal my own business, but you got in my way. now i do not know which matter i should address first.</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -786,7 +791,7 @@
 						<img src="img/story67.png">
 					</a>
 					<div class="comment">
-						<p><span>derek:</span> - don't sweat to much on this decision. i believe it will come by it self, but i guaranty, you will not like it.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - don't sweat to much on this decision. i believe it will come by it self, but i guaranty, you will not like it.</p>
 					</div>
 				</div>
 			</div>
@@ -803,7 +808,7 @@
 						<img src="img/story68.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - hello. i want to report "Bull" bank robbery, there are some hostages as well. please, hurry.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - hello. i want to report "Bull" bank robbery, there are some hostages as well. please, hurry.</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -811,7 +816,7 @@
 						<img src="img/story69.png">
 					</a>
 					<div class="comment">
-						<p><span>police:</span> - thank you, we are sending swat unit right away. please do not do anything, sir.</p>
+						<p><img class="avatar" src="img/police.png"><span>police:</span> - thank you, we are sending swat unit right away. please do not do anything, sir.</p>
 					</div>
 				</div>
 			</div>
@@ -821,7 +826,7 @@
 						<img src="img/story70.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - sorry, i can not promise that....</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - sorry, i can not promise that....</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -829,7 +834,7 @@
 						<img src="img/story71.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - and now it is time for me to make the move, che che...</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - and now it is time for me to make the move, che che...</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -844,7 +849,7 @@
 						<img src="img/story73.png">
 					</a>
 					<div class="comment">
-						<p><span>mobster:</span> - hey, old man, i think i told you that you will not get any money. what do you want now?</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - hey, old man, i think i told you that you will not get any money. what do you want now?</p>
 					</div>
 				</div>
 				<div class="col-md-4 story">
@@ -852,7 +857,7 @@
 						<img src="img/story74.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - pity. actually i am here today exactly for this reason...</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - pity. actually i am here today exactly for this reason...</p>
 					</div>
 				</div>
 			</div>
@@ -868,10 +873,10 @@
 						<img src="img/story75.png">
 					</a>
 					<div class="comment">
-						<p><span>mobster:</span> - and what are you going to do, you homeless bum?</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - and what are you going to do, you homeless bum?</p>
 					</div>
 					<div class="comment">
-						<p><span>del:</span> - actually, i will not do anything, but you...</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - actually, i will not do anything, but you...</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -879,10 +884,10 @@
 						<img src="img/story76.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - hey, street people! these two gentlemen are giving away free food coupons. Hurry to get them, they have a limited amount!</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - hey, street people! these two gentlemen are giving away free food coupons. Hurry to get them, they have a limited amount!</p>
 					</div>
 					<div class="comment">
-						<p><span>mobster:</span> - what are you doing, you stupid begger?</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster:</span> - what are you doing, you stupid begger?</p>
 					</div>
 				</div>
 			</div>
@@ -899,7 +904,7 @@
 						<img src="img/story77.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - don't be scared! they will not wait for the whole day.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - don't be scared! they will not wait for the whole day.</p>
 					</div>
 				</div>
 				<div class="col-md-8 col-md-offset-2 story">
@@ -907,13 +912,13 @@
 						<img src="img/story78.png">
 					</a>
 					<div class="comment">
-						<p><span>mobster 1:</span> - hey, hey, get off me!</p>
+						<p><img class="avatar" src="img/mobster.png"><span>mobster 1:</span> - hey, hey, get off me!</p>
 					</div>
 					<div class="comment">
-						<p><span>mobster 2:</span> - now you will get more then you wanted!</p>
+						<p><img class="avatar" src="img/mobster2.png"><span>mobster 2:</span> - now you will get more then you wanted!</p>
 					</div>
 					<div class="comment thinks">
-						<p><span>del:</span> - (thinks) time to get out of here!</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - (thinks) time to get out of here!</p>
 					</div>
 				</div>
 				<div class="col-md-8 col-md-offset-2 story">
@@ -935,7 +940,7 @@
 						<img src="img/story80.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - did you heard that? i think your little brother is in trouble.</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - did you heard that? i think your little brother is in trouble.</p>
 					</div>
 				</div>
 				<div class="col-md-6 story">
@@ -943,7 +948,7 @@
 						<img src="img/story81.png">
 					</a>
 					<div class="comment thinks">
-						<p><span>derek:</span> - (thinks) i wouldn't be so sure.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - (thinks) i wouldn't be so sure.</p>
 					</div>
 				</div>
 			</div>
@@ -960,13 +965,13 @@
 						<img src="img/story82.png">
 					</a>
 					<div class="comment">
-						<p><span>del:</span> - surprise surprise!.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - surprise surprise!.</p>
 					</div>
 					<div class="comment">
-						<p><span>derek:</span> - well that was a turn of events, wasn't it?</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - well that was a turn of events, wasn't it?</p>
 					</div>
 					<div class="comment">
-						<p><span>derek:</span> - let's finish this misunderstanding. good night.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - let's finish this misunderstanding. good night.</p>
 					</div>
 				</div>
 			</div>
@@ -983,16 +988,16 @@
 						<img src="img/story83.png">
 					</a>
 					<div class="comment">
-						<p><span>kraimking:</span> - i will get next time!!!</p>
+						<p><img class="avatar" src="img/kraimking.png"><span>kraimking:</span> - i will get next time!!!</p>
 					</div>
 					<div class="comment">
-						<p><span>del:</span> - derek, how do you like my new style?</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - derek, how do you like my new style?</p>
 					</div>
 					<div class="comment">
-						<p><span>derek:</span> - i could say it is noticeable from the distance regarding the smell. we are done here, let's get back home.</p>
+						<p><img class="avatar" src="img/Derek.png"><span>derek:</span> - i could say it is noticeable from the distance regarding the smell. we are done here, let's get back home.</p>
 					</div>
 					<div class="comment">
-						<p><span>del:</span> - I agree, enough adventures for today.</p>
+						<p><img class="avatar" src="img/Del.png"><span>del:</span> - I agree, enough adventures for today.</p>
 					</div>
 				</div>
 			</div>
@@ -1005,10 +1010,19 @@
 			<button class="btn" id="showAll">Show all content</button>
 		</div>
 	</div>
-	
+
+	<div id="derekChar" title="Derek">
+		<h1>Derek</h1>
+		<div>
+			<img src="img/Derek.jpg">
+		</div>
+	</div>
+	<div id="delChar" title="Del">Del</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/lightbox.js"></script>
 </body>
 </html>
