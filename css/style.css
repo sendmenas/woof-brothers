@@ -179,10 +179,21 @@ p span {
 
 /* Character pop-ups */
 
-.ui-dialog {
-	width: 500px;
+.ui-widget-header {
+	border: none;
+	background: transparent;
 }
 
-#derekChar img {
-	width: 50px;
+.ui-dialog .ui-dialog-titlebar-close {
+	border: 1px solid black;
+	width: 30px;
+	height: 30px;
+}
+
+.dossier img {
+	width: 470px;
+}
+
+.ui-dialog .ui-dialog-content {
+	padding: 0;
 }

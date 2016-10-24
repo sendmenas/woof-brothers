@@ -5,14 +5,15 @@ $(document).ready(function() {
 	
 	/* Character selection */
 	$(".brother").click(function() {
+
+		var brotherSelect = $(this).attr("id");
+
 		var firstSelection = confirm("Are you sure you want to choose " + brotherSelect + "?");
 		if (firstSelection == true) {
-
-			var brotherSelect = $(this).attr("id");
 	
 			if (brotherSelect === "Derek") {
 				$("#derekChar").dialog("open");
-				$("#derekChar").dialog({width: 500}); // http://api.jqueryui.com/dialog/		
+				$("#derekChar").dialog({width: 500});		
 				$(".ui-button").click(function() {
 					$(this).parents("body").children(".gameStory").first().toggle();
 					$(this).parents("body").children(".gameStory").first().find(".comment").toggle(1000);
@@ -25,6 +26,7 @@ $(document).ready(function() {
 			}
 			if (brotherSelect === "Del") {
 				$("#delChar").dialog("open");
+				$("#delChar").dialog({width: 500});
 				$(".ui-button").click(function() {
 					$(this).parents("body").children(".gameStory").first().toggle();
 					$(this).parents("body").children(".gameStory").first().find(".comment").toggle(1000);
