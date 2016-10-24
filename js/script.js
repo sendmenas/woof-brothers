@@ -13,7 +13,7 @@ $(document).ready(function() {
 	
 			if (brotherSelect === "Derek") {
 				$("#derekChar").dialog("open");
-				$("#derekChar").dialog({width: 500});		
+				$("#derekChar").dialog({width: 500}, {height: 680});		
 				$(".ui-button").click(function() {
 					$(this).parents("body").children(".gameStory").first().toggle();
 					$(this).parents("body").children(".gameStory").first().find(".comment").toggle(1000);
