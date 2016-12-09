@@ -9,6 +9,11 @@ h3 {
 	font-size: 36px;
 }
 
+p {
+	font-family: 'Teko', sans-serif;
+	font-size: 28px;
+}
+
 p span {
 	font-family: 'Bangers', cursive;
 }
@@ -34,6 +39,7 @@ p span {
 .head li {
 	float: right;
 	padding: 25px 30px;
+	text-transform: capitalize;
 }
 
 .head h1 {
@@ -162,6 +168,7 @@ p span {
 .footer {
 	background-color: #808080;
 	text-align: center;
+	min-height: 90px;
 }
 
 #showAll {
@@ -197,3 +204,25 @@ p span {
 .ui-dialog .ui-dialog-content {
 	padding: 0;
 }
+
+/* About page */
+#about h1 {
+	text-align: center;
+}
+
+#about h2 {
+	font-family: 'Teko', sans-serif;
+	font-size: 36px;
+}
+
+#about img {
+	height: 250px;
+}
+
+#about .thumbnail {
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+
+/* Story page*/
