@@ -13,7 +13,7 @@ $(document).ready(function() {
 	
 			if (brotherSelect === "Derek") {
 				$("#derekChar").dialog("open");
-				$("#derekChar").dialog({width: 500}, {height: 680});		
+				$("#derekChar").dialog({width: 620}, {height: 940});		
 				$(".ui-button").click(function() {
 					$(this).parents("body").children(".gameStory").first().toggle();
 					$(this).parents("body").children(".gameStory").first().find(".comment").toggle(1000);
@@ -26,7 +26,7 @@ $(document).ready(function() {
 			}
 			if (brotherSelect === "Del") {
 				$("#delChar").dialog("open");
-				$("#delChar").dialog({width: 500});
+				$("#delChar").dialog({width: 620}, {height: 940});
 				$(".ui-button").click(function() {
 					$(this).parents("body").children(".gameStory").first().toggle();
 					$(this).parents("body").children(".gameStory").first().find(".comment").toggle(1000);
