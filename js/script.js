@@ -2,7 +2,8 @@ $(document).ready(function() {
 
 	$("#derekChar").dialog({ autoOpen: false });
 	$("#delChar").dialog({ autoOpen: false });
-	
+	$("#infoChar").dialog({ autoOpen: false });
+
 	/* Character selection */
 	$(".brother").click(function() {
 
@@ -13,8 +14,9 @@ $(document).ready(function() {
 	
 			if (brotherSelect === "Derek") {
 				$("#derekChar").dialog("open");
-				$("#derekChar").dialog({width: 620}, {height: 940});		
-				$(".ui-button").click(function() {
+				$("#derekChar").dialog({width: 625}, {height: 750});
+				$(".closeButton").click(function() {
+					$("#derekChar").dialog("close");
 					$(this).parents("body").children(".gameStory").first().toggle();
 					$(this).parents("body").children(".gameStory").first().find(".comment").toggle(1000);
 					$("html, body").animate({scrollTop: $(this).parents("body").children(".gameStory").first().offset().top}, 500);
@@ -26,8 +28,9 @@ $(document).ready(function() {
 			}
 			if (brotherSelect === "Del") {
 				$("#delChar").dialog("open");
-				$("#delChar").dialog({width: 620}, {height: 940});
-				$(".ui-button").click(function() {
+				$("#delChar").dialog({width: 625}, {height: 750});
+				$(".closeButton").click(function() {
+					$("#delChar").dialog("close");
 					$(this).parents("body").children(".gameStory").first().toggle();
 					$(this).parents("body").children(".gameStory").first().find(".comment").toggle(1000);
 					$("html, body").animate({scrollTop: $(this).parents("body").children(".gameStory").first().offset().top}, 500);
@@ -57,7 +60,28 @@ $(document).ready(function() {
 		});
 	});
 
+	/* Characters info */
+	$(".charInfo").click(function() {
+		var char = $(this).next().html();
+		console.log(char);
+		$("#infoChar").dialog("open");
+		$("#infoChar").dialog({width: 625}, {height: 750});
+		switch(char) {
+			case ("Del:"):
+				$(".dossier").append("<button class='closeButton'>Close</button><img src='img/dossier_del.png'>");
+				break;
+			case ("Derek:"):
+				$(".dossier").append("<button class='closeButton'>Close</button><img src='img/dossier_derek.png'>");
+				break;
+		}
+		$(".closeButton").click(function() {
+			$("#infoChar").dialog("close");
+		});
+	});
+
 	/* Action buttons */
+
+		/* Yes, No buttons*/
 	$(".yesNo").click(function() {
 		var banditSelect = $(this).html();
 
@@ -71,6 +95,7 @@ $(document).ready(function() {
 		}
 	});
 
+		/* "Show All", "Start again" button*/
 	$("#showAll").click(function() {
 		$(".gameStory").css("display", "inherit");
 		$(".comment").css("display", "inherit");
