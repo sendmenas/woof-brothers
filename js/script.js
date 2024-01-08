@@ -63,15 +63,14 @@ $(document).ready(function() {
 	/* Characters info */
 	$(".charInfo").click(function() {
 		var char = $(this).next().html();
-		console.log(char);
 		$("#infoChar").dialog("open");
 		$("#infoChar").dialog({width: 625}, {height: 750});
 		switch(char) {
 			case ("Del:"):
-				$(".dossier").append("<button class='closeButton'>Close</button><img src='img/dossier_del.png'>");
+				$(".dossier").html("<button class='closeButton'>Close</button><img src='img/dossier_del.png'>");
 				break;
 			case ("Derek:"):
-				$(".dossier").append("<button class='closeButton'>Close</button><img src='img/dossier_derek.png'>");
+				$(".dossier").html("<button class='closeButton'>Close</button><img src='img/dossier_derek.png'>");
 				break;
 		}
 		$(".closeButton").click(function() {
